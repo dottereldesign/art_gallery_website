@@ -94,4 +94,28 @@ select {
 
 * {
   font-size: inherit;
+  font-family: var(--ff-primary-100);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--clr-neutral-100);
+}
+
+h1 {
+  font-size: var(--fs-800);
+}
+
+h2 {
+  font-size: var(--fs-700);
+}
+
+h3 {
+  font-size: var(--fs-600);
+}
+
+p {
+  font-size: var(--fs-500);
 }
