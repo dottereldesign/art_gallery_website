@@ -23,6 +23,7 @@
   --fw-black: 900;
 
   --ff-primary-100: "Big Shoulders Display", cursive;
+  --ff-primary-200: "Outfit", sans-serif;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -94,7 +95,6 @@ select {
 
 * {
   font-size: inherit;
-  font-family: var(--ff-primary-100);
 }
 
 h1,
@@ -104,18 +104,57 @@ p {
   color: var(--clr-neutral-100);
 }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: var(--ff-primary-100);
+}
+
 h1 {
-  font-size: var(--fs-800);
+  font-size: var(--fs-900);
 }
 
 h2 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-800);
 }
 
 h3 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
 }
 
 p {
   font-size: var(--fs-500);
+  font-family: var(--ff-primary-200);
+  font-weight: var(--fw-light);
+}
+
+footer {
+  background-color: var(--clr-neutral-100);
+  padding: 32px 16px 32px 16px;
+  margin-top: 64px;
+}
+
+footer h3,
+footer p {
+  color: var(--clr-neutral-300);
+}
+
+footer p {
+  margin-top: 16px;
+}
+
+.footer_icons {
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer_icons img:nth-child(even) {
+  margin: 0 16px 0 16px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+  }
 }
