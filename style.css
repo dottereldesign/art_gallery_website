@@ -109,6 +109,7 @@ h2,
 h3 {
   text-transform: uppercase;
   font-family: var(--ff-primary-100);
+  line-height: 1;
 }
 
 h1 {
@@ -142,11 +143,17 @@ footer p {
 
 footer p {
   margin-top: 16px;
+  max-width: 281px;
 }
 
 .footer_icons {
   display: flex;
   margin-top: 32px;
+}
+
+.footer_icons img {
+  width: 20px;
+  height: 20px;
 }
 
 .footer_icons img:nth-child(even) {
@@ -156,5 +163,21 @@ footer p {
 @media (min-width: 768px) {
   footer {
     display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 2rem;
+  }
+
+  footer p {
+    margin-top: 0;
+    max-width: 281px;
+  }
+
+  footer h3 {
+    margin-top: 8px;
+  }
+
+  .footer_icons {
+    margin-top: 8px;
+    justify-content: flex-end;
   }
 }
