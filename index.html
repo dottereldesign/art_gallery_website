@@ -14,7 +14,11 @@
 
 <body>
   <main>
-    <img src="assets/mobile/image-hero.jpg" alt="">
+    <picture>
+      <source srcset="assets/desktop/image-hero.jpg" media="(min-width: 1110px)" />
+      <source srcset="assets/tablet/image-hero.jpg" media="(min-width: 768px)" />
+      <img src="assets/mobile/image-hero.jpg" alt="">
+    </picture>
 
     <div class="hero_content">
       <h1>Modern<br>Art Gallery</h1>
@@ -27,24 +31,43 @@
     </div>
   </main>
 
-  <img class="img_grid-1" src="assets/mobile/image-grid-1.jpg" alt="">
-  <h2>Your day <br> at the gallery</h2>
+  <section class="grid_display">
 
-  <p>
-    Wander through our distinct collections and find new insights about
-    our artists. Dive into the details of their creative process.
-  </p>
+    <picture class="img_grid-1">
+      <source srcset="assets/desktop/image-grid-1.jpg" media="(min-width: 1110px)" />
+      <source srcset="assets/tablet/image-grid-1.jpg" media="(min-width: 768px)" />
+      <img src="assets/mobile/image-grid-1.jpg" alt="">
+    </picture>
 
-  <img class="img_grid-2" src="assets/mobile/image-grid-2.jpg" alt="">
-  <img class="img_grid-3" src="assets/mobile/image-grid-3.jpg" alt="">
+    <article class="your_day">
+      <h2>Your day <br> at the gallery</h2>
+      <p>
+        Wander through our distinct collections and find new insights about
+        our artists. Dive into the details of their creative process.
+      </p>
+    </article>
 
-  <article class="be_inspired">
-    <h2>Come &amp; be <br> inspired</h2>
-    <p>
-      We're excited to welcome you to our gallery and see how our collections
-      influence you.
-    </p>
-  </article>
+    <picture class="img_grid-2">
+      <source srcset="assets/desktop/image-grid-2.jpg" media="(min-width: 1110px)" />
+      <source srcset="assets/tablet/image-grid-2.jpg" media="(min-width: 768px)" />
+      <img src="assets/mobile/image-grid-2.jpg" alt="">
+    </picture>
+
+    <picture class="img_grid-3">
+      <source srcset="assets/desktop/image-grid-3.jpg" media="(min-width: 1110px)" />
+      <source srcset="assets/tablet/image-grid-3.jpg" media="(min-width: 768px)" />
+      <img src="assets/mobile/image-grid-3.jpg" alt="">
+    </picture>
+
+
+    <article class="be_inspired">
+      <h2>Come &amp; be <br> inspired</h2>
+      <p>
+        We're excited to welcome you to our gallery and see how our collections
+        influence you.
+      </p>
+    </article>
+  </section>
 
   <footer>
     <div class="footer_grid">
