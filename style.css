@@ -141,6 +141,23 @@ p {
   margin-top: 24px;
 }
 
+/* be inspired */
+.be_inspired {
+  background-color: var(--clr-neutral-100);
+  padding: 16px;
+  margin: 16px 16px 0 16px;
+}
+
+.be_inspired h2 {
+  color: var(--clr-neutral-300);
+  padding-top: 24px;
+}
+
+.be_inspired p {
+  color: var(--clr-neutral-300);
+  padding: 16px 0 24px 0;
+}
+
 /* footer */
 footer {
   background-color: var(--clr-neutral-100);
