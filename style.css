@@ -63,6 +63,7 @@ body {
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
@@ -86,7 +87,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -146,8 +149,7 @@ p {
   margin-bottom: 24px;
 }
 
-.hero_content a {
-  width: 260px;
+.index_btn {
   height: 72px;
   display: inline-block;
   background-color: var(--clr-neutral-100);
@@ -160,6 +162,11 @@ p {
   font-family: var(--ff-primary-200);
   font-weight: var(--fw-light);
   text-transform: uppercase;
+  position: absolute;
+}
+
+.index_btn span {
+  padding: 0 24px 0 24px;
 }
 
 @media (min-width: 716px) {
@@ -167,6 +174,7 @@ p {
     display: grid;
     grid-template-columns: 437px auto;
     margin: 0 auto 100px auto;
+    max-width: 1110px;
   }
   main picture {
     width: 437px;
@@ -184,6 +192,45 @@ p {
 
   .hero_content h1 {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1472px) {
+  .hero_grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 0 auto 100px auto;
+    position: relative;
+    max-width: 1440px;
+  }
+
+  main picture {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+  }
+
+  main picture::before {
+    content: "";
+    background: var(--clr-neutral-100);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 33.5%;
+  }
+
+  .hero_content h1 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 65%,
+      rgba(0, 0, 0, 1) 65%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 20%;
+    left: 14.5%;
   }
 }
 

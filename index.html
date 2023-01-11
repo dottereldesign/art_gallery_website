@@ -15,7 +15,7 @@
 <body>
   <main class="hero_grid">
     <picture>
-      <source srcset="assets/desktop/image-hero.jpg" media="(min-width: 1110px)" />
+      <source srcset="assets/desktop/image-hero@2x.jpg" media="(min-width: 1110px)" />
       <source srcset="assets/tablet/image-hero@2x.jpg" media="(min-width: 716px)" />
       <source srcset="assets/mobile/image-hero-2.jpg" media="(min-width: 375px)" />
       <img src="assets/mobile/image-hero.jpg" alt="">
@@ -28,7 +28,14 @@
         from a spark of inspiration. Will these pieces inspire you? Visit
         us and find out.
       </p>
-      <a href="location.html">Our location</a>
+
+      <a class="index_btn" href="location.html">
+        <span>Our Location</span>
+        <div class="arrow_wrapper">
+          <img src="assets/icon-arrow-right.svg" alt="">
+        </div>
+      </a>
+
     </div>
   </main>
 
