@@ -173,43 +173,43 @@ picture {
 @media (min-width: 716px) {
   .grid_display {
     display: grid;
-    grid-template-columns: 9fr 8fr;
-    grid-template-rows: auto auto;
-  }
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
+    gap: 16px;
 
-  .your_day {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .img_grid-1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    max-width: 689px;
+    margin: 0 auto;
   }
 
   .img_grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 398px;
   }
 
   .img_grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    width: 280px;
   }
 
   .be_inspired {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    width: 280px;
+    padding: 16px 16px 0 16px;
+    margin: 0;
+    height: 396px;
+  }
+
+  .be_inspired h2 {
+    padding-top: 0;
+  }
+
+  picture {
+    margin: 0;
   }
 }
 
