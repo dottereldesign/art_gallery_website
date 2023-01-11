@@ -154,6 +154,31 @@ picture {
   padding: 16px 0 0 0;
 }
 
+@media (min-width: 716px) {
+  .grid_columns {
+    display: grid;
+    grid-template-columns: auto 398px;
+    max-width: 694px;
+    margin: 16px auto;
+    gap: 16px;
+  }
+
+  .your_day {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+  }
+
+  .your_day {
+    margin: auto;
+  }
+
+  .img_grid-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
 .be_inspired {
   background-color: var(--clr-neutral-100);
   padding: 16px;
@@ -176,8 +201,7 @@ picture {
     grid-template-columns: auto auto;
     grid-auto-rows: auto auto;
     gap: 16px;
-
-    max-width: 689px;
+    max-width: 694px;
     margin: 0 auto;
   }
 
@@ -201,7 +225,7 @@ picture {
     width: 280px;
     padding: 16px 16px 0 16px;
     margin: 0;
-    height: 396px;
+    height: 391px;
   }
 
   .be_inspired h2 {
