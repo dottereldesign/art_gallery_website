@@ -235,6 +235,10 @@ p {
 }
 
 /* grid display */
+.grid_columns {
+  margin-top: 160px;
+}
+
 picture {
   margin: 0 16px 16px 16px;
 }
