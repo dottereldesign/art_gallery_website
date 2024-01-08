@@ -1,101 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art gallery website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art gallery website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <main class="hero_grid">
+      <picture>
+        <source
+          srcset="assets/desktop/image-hero@2x.jpg"
+          media="(min-width: 1110px)"
+        />
+        <source
+          srcset="assets/tablet/image-hero@2x.jpg"
+          media="(min-width: 716px)"
+        />
+        <source
+          srcset="assets/mobile/image-hero-2.jpg"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="assets/mobile/image-hero.jpg"
+          alt="Two visitors observing a piece of art."
+        />
+      </picture>
 
-<body>
-  <main class="hero_grid">
-    <picture>
-      <source srcset="assets/desktop/image-hero@2x.jpg" media="(min-width: 1110px)" />
-      <source srcset="assets/tablet/image-hero@2x.jpg" media="(min-width: 716px)" />
-      <source srcset="assets/mobile/image-hero-2.jpg" media="(min-width: 375px)" />
-      <img src="assets/mobile/image-hero.jpg" alt="Two visitors observing a piece of art.">
-    </picture>
+      <div class="hero_content">
+        <h1>Modern<br />Art Gallery</h1>
+        <p>
+          The arts in the collection of the Modern Art Gallery all started from
+          a spark of inspiration. Will these pieces inspire you? Visit us and
+          find out.
+        </p>
 
-    <div class="hero_content">
-      <h1>Modern<br>Art Gallery</h1>
-      <p>
-        The arts in the collection of the Modern Art Gallery all started
-        from a spark of inspiration. Will these pieces inspire you? Visit
-        us and find out.
-      </p>
-
-      <a class="index_btn" href="location.html">
-        <span>Our Location</span>
-        <div class="arrow_wrapper">
-          <img src="assets/icon-arrow-right.svg" alt="Right arrow icon.">
-        </div>
-      </a>
-
-    </div>
-  </main>
-
-  <section class="grid_columns">
-    <picture class="img_grid-1">
-      <source srcset="assets/desktop/image-grid-1@2x.jpg" media="(min-width: 1110px)" />
-      <source srcset="assets/tablet/image-grid-1@2x.jpg" media="(min-width: 716px)" />
-      <source srcset="assets/mobile/image-grid-1-2.jpg" media="(min-width: 375px)" />
-      <img src="assets/mobile/image-grid-1.jpg" alt="">
-    </picture>
-
-    <article class="your_day">
-      <h2>Your day <br> at the gallery</h2>
-      <p>
-        Wander through our distinct collections and find new insights about
-        our artists. Dive into the details of their creative process.
-      </p>
-    </article>
-  </section>
-
-  <section class="grid_display">
-
-    <picture class="img_grid-2">
-      <source srcset="assets/desktop/image-grid-2.jpg" media="(min-width: 1110px)" />
-      <source srcset="assets/tablet/image-grid-2@2x.jpg" media="(min-width: 716px)" />
-      <source srcset="assets/mobile/image-grid-2-2.jpg" media="(min-width: 375px)" />
-      <img src="assets/mobile/image-grid-2.jpg" alt="Art hanging on wall in front of wooden chair.">
-    </picture>
-
-    <picture class="img_grid-3">
-      <source srcset="assets/desktop/image-grid-3.jpg" media="(min-width: 1110px)" />
-      <source srcset="assets/tablet/image-grid-3@2x.jpg" media="(min-width: 716px)" />
-      <source srcset="assets/mobile/image-grid-3-2.jpg" media="(min-width: 375px)" />
-      <img src="assets/mobile/image-grid-3.jpg" alt="People looking at art in a museum.">
-    </picture>
-
-    <article class="be_inspired">
-      <h2>Come &amp; be <br> inspired</h2>
-      <p>
-        We're excited to welcome you to our gallery and see how our collections
-        influence you.
-      </p>
-    </article>
-
-  </section>
-
-  <footer class="index_footer">
-    <div class="footer_grid">
-      <h3>Modern<br>Art Gallery</h3>
-      <p>
-        The Modern Art Gallery is free to all visitors and open seven days a week
-        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-      </p>
-      <div class="footer_icons">
-        <img src="assets/icon-facebook.svg" alt="">
-        <img src="assets/icon-instagram.svg" alt="">
-        <img src="assets/icon-twitter.svg" alt="">
+        <a class="index_btn" href="location.html">
+          <span>Our Location</span>
+          <div class="arrow_wrapper">
+            <img src="assets/icon-arrow-right.svg" alt="Right arrow icon." />
+          </div>
+        </a>
       </div>
-    </div>
-  </footer>
-</body>
+    </main>
 
+    <section class="grid_columns">
+      <picture class="img_grid-1">
+        <source
+          srcset="assets/desktop/image-grid-1@2x.jpg"
+          media="(min-width: 1110px)"
+        />
+        <source
+          srcset="assets/tablet/image-grid-1@2x.jpg"
+          media="(min-width: 716px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-1-2.jpg"
+          media="(min-width: 375px)"
+        />
+        <img src="assets/mobile/image-grid-1.jpg" alt="" />
+      </picture>
+
+      <article class="your_day">
+        <h2>
+          Your day <br />
+          at the gallery
+        </h2>
+        <p>
+          Wander through our distinct collections and find new insights about
+          our artists. Dive into the details of their creative process.
+        </p>
+      </article>
+    </section>
+
+    <section class="grid_display">
+      <picture class="img_grid-2">
+        <source
+          srcset="assets/desktop/image-grid-2.jpg"
+          media="(min-width: 1110px)"
+        />
+        <source
+          srcset="assets/tablet/image-grid-2@2x.jpg"
+          media="(min-width: 716px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-2-2.jpg"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="assets/mobile/image-grid-2.jpg"
+          alt="Art hanging on wall in front of wooden chair."
+        />
+      </picture>
+
+      <picture class="img_grid-3">
+        <source
+          srcset="assets/desktop/image-grid-3.jpg"
+          media="(min-width: 1110px)"
+        />
+        <source
+          srcset="assets/tablet/image-grid-3@2x.jpg"
+          media="(min-width: 716px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-3-2.jpg"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="assets/mobile/image-grid-3.jpg"
+          alt="People looking at art in a museum."
+        />
+      </picture>
+
+      <article class="be_inspired">
+        <h2>
+          Come &amp; be <br />
+          inspired
+        </h2>
+        <p>
+          We're excited to welcome you to our gallery and see how our
+          collections influence you.
+        </p>
+      </article>
+    </section>
+
+    <footer class="index_footer">
+      <div class="footer_grid">
+        <h3>Modern<br />Art Gallery</h3>
+        <p>
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <div class="footer_icons">
+          <a href=""><img src="assets/icon-facebook.svg" alt="" /></a>
+          <a href=""><img src="assets/icon-instagram.svg" alt="" /></a>
+          <a href=""><img src="assets/icon-twitter.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
